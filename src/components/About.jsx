@@ -28,6 +28,7 @@ function About() {
               <span className="skill-tag">RxSwift</span>
               <span className="skill-tag">Sketch</span>
               <span className="skill-tag">Figma</span>
+              <span className="skill-tag">Stripe</span>
             </div>
           </div>
         </div>

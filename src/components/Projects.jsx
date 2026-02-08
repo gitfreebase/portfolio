@@ -85,7 +85,7 @@ function Projects() {
       duration: "10 mois",
       teamSize: 2,
       logo: "/images/usemyfeed.svg",
-      tech: ["Swift Storyboard", "MVC", "Back4App", "Javascript"],
+      tech: ["Swift Storyboard", "MVC", "Back4App", "Javascript", "Stripe"],
       url: "https://usemyfeed.com/"
     },
     {
@@ -94,11 +94,11 @@ function Projects() {
       type: "Mobile",
       role: "Dev & chef de projet",
       description: "Application e-commerce iOS iPad + iPhone: diffusion de livestream (tiktokshop avant l'heure) + gestion du stock depuis l'iPad",
-      detailedDescription: "Développement et gestion d'une application e-commerce innovante pour iOS (iPad + iPhone). Implémentation d'un système de livestream shopping sur le principe de TikTok Shop. Interface backoffice iPad pour la gestion du stock en temps réel et diffusion des lives. Application iPhone pour les utilisateurs avec achat en live et hors-live. Architecture MVC iPhone et MVVM iPad avec Firebase et Firestore.",
+      detailedDescription: "Développement et gestion d'une application e-commerce innovante pour iOS (iPad + iPhone). Implémentation d'un système de livestream shopping sur le principe de TikTok Shop. Interface backoffice iPad pour la gestion du stock en temps réel et diffusion des lives. Génération d'étiquettes Mondial Relay et paiements Stripe. Application iPhone pour les utilisateurs avec achat en live et hors-live. Architecture MVC iPhone et MVVM iPad avec Firebase et Firestore.",
       date: "2021-2023",
       duration: "3 ans",
       teamSize: 3,
-      tech: ["Swift", "MVC", "MVVM", "Stream STMP", "Firebase", "Firestore"]
+      tech: ["Swift", "MVC", "MVVM", "Stream STMP", "Firebase", "Firestore", "Stripe"]
     },
     {
       id: 8,
@@ -204,8 +204,20 @@ function Projects() {
       date: "2025-2026",
       duration: "1 an",
       teamSize: 8,
-        logo: "/images/bigmars.png",
-      tech: ["ReactJS, NodeJS, SwiftUI, Combine, Kotlin, Jetpack Compose"],
+      logo: "/images/bigmars.png",
+      tech: ["ReactJS", "NodeJS", "SwiftUI", "Combine", "Kotlin", "Jetpack Compose"],
+    },
+    {
+      id: 16,
+      title: "Surfnow",
+      type: "Mobile & Web",
+      role: "Chef de projet & dev",
+      description: "Plateforme de réservation de cours de surf et back-office iPad de gestion de planning pour les clubs.",
+      detailedDescription: "Gestion de projet d'une plateforme de réservation et de planning pour clubs. Application iPad de gestion back-office à destination des clubs, intégration d'un calendrier. Site web de réservations. ",
+      date: "2023-2024",
+      duration: "1 an",
+      teamSize: 5,
+      tech: ["Swift Storyboard", "UIKIT", "Angular", "TypeScript", "Back4App", "Cloud Code"],
     },
   ]
 
