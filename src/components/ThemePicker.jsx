@@ -1,25 +1,27 @@
 function ThemePicker({ currentTheme, onThemeChange }) {
-  const themes = [
-    { name: 'neutral', label: 'Noir & Blanc', color: '#2a2a2a' },
-    { name: 'blue', label: 'Rose Pastel', color: '#ff6b6b' },
-    { name: 'green', label: 'Violet Pastel', color: '#6366f1' }
-  ]
-
   return (
     <div className="theme-picker">
-      {themes.map(theme => (
-        <button
-          key={theme.name}
-          className={`theme-button ${currentTheme === theme.name ? 'active' : ''}`}
-          onClick={() => onThemeChange(theme.name)}
-          aria-label={`Thème ${theme.label}`}
-        >
-          <span
-            className="theme-color"
-            style={{ backgroundColor: theme.color }}
-          />
-        </button>
-      ))}
+      <button
+        className={`theme-button ${currentTheme === 'neutral' ? 'active' : ''}`}
+        onClick={() => onThemeChange('neutral')}
+        aria-label="Thème Noir & Blanc"
+      >
+        <span
+          className="theme-color"
+          style={{ backgroundColor: '#2a2a2a' }}
+        />
+      </button>
+      <button
+        className={`theme-button theme-random ${currentTheme === 'random' ? 'active' : ''}`}
+        onClick={() => onThemeChange('random')}
+        aria-label="Thème Aléatoire"
+      >
+        <span className="theme-color theme-color-random">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 4L22 8L18 12M6 20L2 16L6 12M8 4H13.5C15.71 4 17.39 5.68 17.39 7.89V8M16 20H10.5C8.29 20 6.61 18.32 6.61 16.11V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </span>
+      </button>
     </div>
   )
 }

@@ -1,0 +1,71 @@
+/* Fonts Loading */
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('./assets/fonts/archivo/Archivo-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('./assets/fonts/archivo/Archivo-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Flor';
+  src: url('./assets/fonts/flor/FlorDeRuina-Flor.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fungal';
+  src: url('./assets/fonts/fungal/Fungal-Grow100Thickness500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamont';
+  src: url('./assets/fonts/garamont/EBGaramond-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamont';
+  src: url('./assets/fonts/garamont/EBGaramond-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mess';
+  src: url('./assets/fonts/mess/Mess.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nimbus';
+  src: url('./assets/fonts/nimbus/NimbusSanL-Regu.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nimbus';
+  src: url('./assets/fonts/nimbus/NimbusSanL-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quarantype';
+  src: url('./assets/fonts/quarantype/Quarantype-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
