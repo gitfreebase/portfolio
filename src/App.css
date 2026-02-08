@@ -105,25 +105,81 @@ main {
   grid-column: 1 / -1;
   background-color: var(--color-1);
   border-bottom: var(--border-width) solid var(--border-color);
-  padding: 2rem;
+  padding: 2rem 0;
   z-index: 100;
+  overflow: hidden;
+  position: relative;
 }
 
-.header .container {
+.header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 2rem;
   max-width: 100%;
-  padding: 0;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.logo-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo-marquee {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 20s linear infinite;
+  width: fit-content;
 }
 
 .logo {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 900;
   color: var(--primary-color);
-  letter-spacing: 0;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo-archivo {
+  font-family: 'Archivo', sans-serif;
+}
+
+.logo-flor {
+  font-family: 'Flor', sans-serif;
+}
+
+.logo-fungal {
+  font-family: 'Fungal', sans-serif;
+}
+
+.logo-garamont {
+  font-family: 'Garamont', serif;
+}
+
+.logo-mess {
+  font-family: 'Mess', sans-serif;
+}
+
+.logo-nimbus {
+  font-family: 'Nimbus', sans-serif;
+}
+
+.logo-quarantype {
+  font-family: 'Quarantype', sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Sections - Grid asymétrique */
@@ -528,6 +584,8 @@ main {
   gap: 0;
   border: var(--border-width) solid var(--border-color);
   background-color: var(--color-white);
+  position: relative;
+  z-index: 10;
 }
 
 .theme-button {
@@ -627,8 +685,26 @@ main {
     padding: 2rem;
   }
 
-  .header .container {
+  .header {
+    padding: 1.5rem 0;
+  }
+
+  .header-container {
     gap: 1rem;
+    padding: 0 1rem;
+    justify-content: flex-end;
+  }
+
+  .logo-wrapper {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .logo-marquee {
+    gap: 2rem;
   }
 
   .section {
