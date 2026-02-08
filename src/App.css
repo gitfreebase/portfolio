@@ -242,12 +242,33 @@ main {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.project-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-item-text {
+  flex: 1;
+}
+
 .project-item h3 {
   color: var(--color-white);
   margin-bottom: 0.2rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.project-item-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .project-meta {
@@ -301,6 +322,27 @@ main {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-details-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.project-header-text {
+  flex: 1;
+}
+
 .project-details h3 {
   color: var(--color-white);
   margin-bottom: 0.4rem;
@@ -310,14 +352,61 @@ main {
 }
 
 .project-details .project-meta {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--border-width) solid rgba(255, 255, 255, 0.3);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.info-label {
+  color: var(--color-white);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.info-value {
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.project-description-section {
+  margin-bottom: 1.5rem;
+}
+
+.project-description-section h4,
+.tech-section h4 {
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
 }
 
 .project-description {
   color: var(--color-white);
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.85rem;
+}
+
+.tech-section {
+  margin-bottom: 1.5rem;
 }
 
 .tech-tags {
@@ -533,5 +622,22 @@ main {
   .theme-button {
     width: 40px;
     height: 40px;
+  }
+
+  .project-info {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .project-item-logo {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+  }
+
+  .project-details-logo {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
   }
 }
